@@ -1,9 +1,9 @@
-﻿Log file open, 07/03/17 18:20:35
+﻿Log file open, 07/03/17 20:36:41
 LogInit:Display: Running engine for game: ThirdPersonExample
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(-724880134) SRandInit(-724880134).
+LogInit:Display: RandInit(-1343775383) SRandInit(-1343775383).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.095333
+LogStats: Stats thread started at 0.089485
 LogPluginManager: Loaded Plugin Paper2D, From C:/Program Files/Epic Games/UE_4.14/Engine/Plugins/2D/Paper2D/Paper2D.uplugin
 LogPluginManager: Loaded Plugin LightPropagationVolume, From C:/Program Files/Epic Games/UE_4.14/Engine/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin
 LogPluginManager: Loaded Plugin BlankPlugin, From C:/Program Files/Epic Games/UE_4.14/Engine/Plugins/Developer/BlankPlugin/BlankPlugin.uplugin
@@ -102,6 +102,8 @@ LogPluginManager: Loaded Plugin FbxAutomationTestBuilder, From C:/Program Files/
 LogPluginManager: Loaded Plugin FunctionalTestingEditor, From C:/Program Files/Epic Games/UE_4.14/Engine/Plugins/Tests/FunctionalTestingEditor/FunctionalTestingEditor.uplugin
 LogPluginManager: Loaded Plugin RuntimeTests, From C:/Program Files/Epic Games/UE_4.14/Engine/Plugins/Tests/RuntimeTests/RuntimeTests.uplugin
 LogPluginManager: Loaded Plugin ScreenshotTools, From C:/Program Files/Epic Games/UE_4.14/Engine/Plugins/Tests/ScreenshotTools/ScreenshotTools.uplugin
+LogPluginManager: Loaded Plugin StereoPanorama, From C:/Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/Plugins/StereoPanorama/StereoPanorama.uplugin
+LogPluginManager: Replacing engine version of 'StereoPanorama' plugin with game version
 LogInit: Using libcurl 7.47.1
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2g
@@ -145,732 +147,438 @@ LogInit: Base directory: C:/Program Files/Epic Games/UE_4.14/Engine/Binaries/Win
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.07.03-09.20.35:810][  0]LogInit: Selected Device Profile: [Windows]
-[2017.07.03-09.20.35:810][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.07.03-09.20.35:818][  0]LogInit: Computer: DESKTOP-NNFO4FT
-[2017.07.03-09.20.35:818][  0]LogInit: User: nikem
-[2017.07.03-09.20.35:818][  0]LogInit: CPU Page size=65536, Cores=4
-[2017.07.03-09.20.35:818][  0]LogInit: High frequency timer resolution =2.742191 MHz
-[2017.07.03-09.20.35:819][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
-[2017.07.03-09.20.35:819][  0]LogMemory: Platform Memory Stats for Windows
-[2017.07.03-09.20.35:819][  0]LogMemory: Process Physical Memory: 265.64 MB used, 265.64 MB peak
-[2017.07.03-09.20.35:819][  0]LogMemory: Process Virtual Memory: 262.47 MB used, 262.47 MB peak
-[2017.07.03-09.20.35:819][  0]LogMemory: Physical Memory: 11360.98 MB used,  21258.99 MB free, 32619.97 MB total
-[2017.07.03-09.20.35:819][  0]LogMemory: Virtual Memory: 709.27 MB used,  21258.99 MB free, 134217728.00 MB total
-[2017.07.03-09.20.35:867][  0]LogTextLocalizationManager: No specific translations for ('ko-KR') exist, so ('ko') translations will be used.
-[2017.07.03-09.20.35:909][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:KismetSchema, Key:Default):
+[2017.07.03-11.36.41:694][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.03-11.36.41:694][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.07.03-11.36.41:704][  0]LogInit: Computer: DESKTOP-NNFO4FT
+[2017.07.03-11.36.41:704][  0]LogInit: User: nikem
+[2017.07.03-11.36.41:704][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.07.03-11.36.41:704][  0]LogInit: High frequency timer resolution =2.742191 MHz
+[2017.07.03-11.36.41:704][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2017.07.03-11.36.41:704][  0]LogMemory: Platform Memory Stats for Windows
+[2017.07.03-11.36.41:704][  0]LogMemory: Process Physical Memory: 265.65 MB used, 265.65 MB peak
+[2017.07.03-11.36.41:705][  0]LogMemory: Process Virtual Memory: 262.38 MB used, 262.38 MB peak
+[2017.07.03-11.36.41:705][  0]LogMemory: Physical Memory: 14018.39 MB used,  18601.57 MB free, 32619.97 MB total
+[2017.07.03-11.36.41:705][  0]LogMemory: Virtual Memory: 709.27 MB used,  18601.57 MB free, 134217728.00 MB total
+[2017.07.03-11.36.41:750][  0]LogTextLocalizationManager: No specific translations for ('ko-KR') exist, so ('ko') translations will be used.
+[2017.07.03-11.36.41:789][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:KismetSchema, Key:Default):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.14/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (940523119) Localized String: (디폴트)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.14/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (940523119) Localized String: (기본)
-[2017.07.03-09.20.35:909][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:InternalTimeAccumulator):
+[2017.07.03-11.36.41:789][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:InternalTimeAccumulator):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.14/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용되는 누적 시간입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.14/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
-[2017.07.03-09.20.35:909][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:bIgnoreForRelevancyTest):
+[2017.07.03-11.36.41:789][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:bIgnoreForRelevancyTest):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.14/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (319969718) Localized String: (True 면, 스테이트에서 최고 가중치 애니메이션을 찾는 "Relevant anim" 노드는 이 노드를 무시합니다.
  )
 Localization Resource: (C:/Program Files/Epic Games/UE_4.14/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (319969718) Localized String: (True 면 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" 노드가 무시됩니다.
  )
-[2017.07.03-09.20.35:909][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:BlendWeight):
+[2017.07.03-11.36.41:789][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:BlendWeight):
 Localization Resource: (C:/Program Files/Epic Games/UE_4.14/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 마지막 걸린 블렌드웨이트 입니다.)
 Localization Resource: (C:/Program Files/Epic Games/UE_4.14/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 대해 마지막 접한 블렌드 웨이트)
-[2017.07.03-09.20.36:548][  0]LogD3D11RHI: D3D11 adapters:
-[2017.07.03-09.20.36:627][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050' (Feature Level 11_0)
-[2017.07.03-09.20.36:627][  0]LogD3D11RHI:       4031/0/16309 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2017.07.03-09.20.36:635][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
-[2017.07.03-09.20.36:635][  0]LogD3D11RHI:       128/0/16309 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2017.07.03-09.20.36:639][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.07.03-09.20.36:639][  0]LogD3D11RHI:       0/0/16309 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.07.03-09.20.36:639][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.07.03-09.20.36:649][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.07.03-09.20.36:649][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8d (for the marketing name, search the web for "GPU Device Id")
-[2017.07.03-09.20.36:649][  0]LogWindows: EnumDisplayDevices:
-[2017.07.03-09.20.36:649][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:1 D:1)
-[2017.07.03-09.20.36:650][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:0 D:0)
-[2017.07.03-09.20.36:650][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
-[2017.07.03-09.20.36:651][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2017.07.03-09.20.36:651][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050
-[2017.07.03-09.20.36:651][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2017.07.03-09.20.36:651][  0]LogD3D11RHI:      Driver Date: Unknown
-[2017.07.03-09.20.36:651][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.07.03-09.20.36:694][  0]LogD3D11RHI: Async texture creation enabled
-[2017.07.03-09.20.36:720][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.07.03-09.20.36:723][  0]LogShaderCompilers: Guid format shader working directory is -29 characters bigger than the processId version (../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Intermediate/Shaders/WorkingDirectory/18344/).
-[2017.07.03-09.20.36:723][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/nikem/AppData/Local/Temp/UnrealShaderWorkingDir/37AB6820439BA7BCA2046FA72776BBC9/'.
-[2017.07.03-09.20.36:723][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.07.03-09.20.38:363][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.07.03-09.20.38:545][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
-[2017.07.03-09.20.38:774][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
-[2017.07.03-09.20.39:060][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
-[2017.07.03-09.20.39:433][  0]LogTemp:Display: Loaded TP MacTargetPlatform
-[2017.07.03-09.20.39:931][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.07.03-09.20.40:409][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.07.03-09.20.40:913][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.07.03-09.20.41:350][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.07.03-09.20.41:861][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.07.03-09.20.42:355][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.07.03-09.20.42:851][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.07.03-09.20.43:295][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.07.03-09.20.43:702][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.07.03-09.20.44:110][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.07.03-09.20.44:853][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.07.03-09.20.44:853][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.07.03-09.20.45:164][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.07.03-09.20.45:810][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.07.03-09.20.46:142][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2017.07.03-09.20.46:664][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2017.07.03-09.20.47:193][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.07.03-09.20.47:658][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.07.03-09.20.48:169][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.07.03-09.20.48:169][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.07.03-09.20.52:469][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.07.03-09.20.52:615][  0]LogDerivedDataCache: Loaded boot cache 0.15s 50MB C:/Users/nikem/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
-[2017.07.03-09.20.52:615][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/nikem/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc
-[2017.07.03-09.20.52:616][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.07.03-09.20.52:616][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.07.03-09.20.52:616][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.07.03-09.20.52:616][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.07.03-09.20.52:678][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.07.03-09.20.52:695][  0]LogDerivedDataCache: Using Local data cache path C:/Users/nikem/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.07.03-09.20.53:747][  0]LogInit: Selected Device Profile: [Windows]
-[2017.07.03-09.20.53:762][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2017.07.03-09.20.55:301][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.07.03-09.20.55:721][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.07.03-09.20.56:172][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.07.03-09.20.56:172][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
-[2017.07.03-09.20.56:172][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.07.03-09.20.58:759][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3195953, ProjectName: thirdpersonexample, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 25382818
-[2017.07.03-09.20.59:126][  0]LogAssetRegistry: FAssetRegistry took 0.0230 seconds to start up
-[2017.07.03-09.20.59:607][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.147577 seconds
-[2017.07.03-09.20.59:631][  0]LogUObjectArray: 31946 objects as part of root set at end of initial load.
-[2017.07.03-09.20.59:631][  0]LogUObjectAllocator: 6935848 out of 0 bytes used by permanent object pool.
-[2017.07.03-09.20.59:631][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.07.03-09.21.00:474][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.07.03-09.21.06:822][  0]LogSlate: Using Freetype 2.6.0
-[2017.07.03-09.21.06:823][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.07.03-09.21.06:823][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.07.03-09.21.09:958][  0]LogSubstanceCoreModule: Substance [CPU] Engine Loaded, Max Texture Size = 2048
-[2017.07.03-09.21.10:200][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.07.03-09.21.10:445][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.07.03-09.21.12:114][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.07.03-09.21.14:438][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.07.03-09.21.14:653][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.07.03-09.21.14:950][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.07.03-09.21.15:223][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.07.03-09.21.22:740][  0]LogEngine: Initializing Engine...
-[2017.07.03-09.21.22:774][  0]LogHMD: Failed to initialize OpenVR with code 126
-[2017.07.03-09.21.23:185][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.07.03-09.21.23:206][  0]LogInit: XAudio2 using '스피커 / 헤드폰(Realtek Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.07.03-09.21.23:254][  0]LogInit: FAudioDevice initialized.
-[2017.07.03-09.21.23:279][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/nikem/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
-[2017.07.03-09.21.23:282][  0]LogInit: Texture streaming: Enabled
-[2017.07.03-09.21.23:685][  0]LogInit: Transaction tracking system initialized
-[2017.07.03-09.21.24:460][  0]BlueprintLog: New page: 에디터 로드
-[2017.07.03-09.21.26:636][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
-[2017.07.03-09.21.28:269][  0]LogConsoleResponse:Display: 
-[2017.07.03-09.21.28:537][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.07.03-09.21.28:537][  0]LogCook:Display: Mobile HDR setting 1
-[2017.07.03-09.21.29:125][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/' took 0.01s
-[2017.07.03-09.21.31:568][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
-[2017.07.03-09.21.31:570][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files/Epic Games/UE_4.14/FeaturePacks/StarterContent.upack)
-[2017.07.03-09.21.31:579][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
-[2017.07.03-09.21.31:582][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Architecture/Floor_400x400.uasset"
-[2017.07.03-09.21.31:585][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Architecture/Pillar_50x500.uasset"
-[2017.07.03-09.21.31:588][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
-[2017.07.03-09.21.31:590][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Architecture/Wall_400x200.uasset"
-[2017.07.03-09.21.31:593][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Architecture/Wall_400x300.uasset"
-[2017.07.03-09.21.31:595][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Architecture/Wall_400x400.uasset"
-[2017.07.03-09.21.31:597][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Architecture/Wall_500x500.uasset"
-[2017.07.03-09.21.31:600][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
-[2017.07.03-09.21.31:602][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
-[2017.07.03-09.21.31:605][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
-[2017.07.03-09.21.31:607][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
-[2017.07.03-09.21.31:612][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Collapse01.uasset"
-[2017.07.03-09.21.31:615][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Collapse02.uasset"
-[2017.07.03-09.21.31:618][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Collapse_Cue.uasset"
-[2017.07.03-09.21.31:621][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Explosion01.uasset"
-[2017.07.03-09.21.31:624][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Explosion02.uasset"
-[2017.07.03-09.21.31:626][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Explosion_Cue.uasset"
-[2017.07.03-09.21.31:629][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Fire01.uasset"
-[2017.07.03-09.21.31:632][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Fire01_Cue.uasset"
-[2017.07.03-09.21.31:635][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Fire_Sparks01.uasset"
-[2017.07.03-09.21.31:637][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
-[2017.07.03-09.21.31:639][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Light01.uasset"
-[2017.07.03-09.21.31:641][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Light01_Cue.uasset"
-[2017.07.03-09.21.31:643][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Light02.uasset"
-[2017.07.03-09.21.31:645][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Light02_Cue.uasset"
-[2017.07.03-09.21.31:649][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Smoke01.uasset"
-[2017.07.03-09.21.31:652][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Smoke01_Cue.uasset"
-[2017.07.03-09.21.31:654][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
-[2017.07.03-09.21.31:659][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Starter_Birds01.uasset"
-[2017.07.03-09.21.31:670][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Starter_Music01.uasset"
-[2017.07.03-09.21.31:672][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
-[2017.07.03-09.21.31:676][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Starter_Wind05.uasset"
-[2017.07.03-09.21.31:681][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Starter_Wind06.uasset"
-[2017.07.03-09.21.31:683][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Steam01.uasset"
-[2017.07.03-09.21.31:686][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Audio/Steam01_Cue.uasset"
-[2017.07.03-09.21.31:689][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
-[2017.07.03-09.21.31:691][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
-[2017.07.03-09.21.31:693][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
-[2017.07.03-09.21.31:695][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
-[2017.07.03-09.21.31:698][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
-[2017.07.03-09.21.31:700][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
-[2017.07.03-09.21.31:703][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
-[2017.07.03-09.21.31:706][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
-[2017.07.03-09.21.31:708][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
-[2017.07.03-09.21.31:710][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
-[2017.07.03-09.21.31:713][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
-[2017.07.03-09.21.31:715][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
-[2017.07.03-09.21.31:717][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
-[2017.07.03-09.21.31:720][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
-[2017.07.03-09.21.31:722][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
-[2017.07.03-09.21.31:725][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
-[2017.07.03-09.21.31:784][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
-[2017.07.03-09.21.31:788][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Maps/Advanced_Lighting.umap"
-[2017.07.03-09.21.31:791][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Maps/Minimal_Default.umap"
-[2017.07.03-09.21.31:806][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Maps/StarterMap.umap"
-[2017.07.03-09.21.31:808][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_AssetPlatform.uasset"
-[2017.07.03-09.21.31:811][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Basic_Floor.uasset"
-[2017.07.03-09.21.31:813][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Basic_Wall.uasset"
-[2017.07.03-09.21.31:815][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
-[2017.07.03-09.21.31:817][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
-[2017.07.03-09.21.31:820][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
-[2017.07.03-09.21.31:822][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
-[2017.07.03-09.21.31:825][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
-[2017.07.03-09.21.31:828][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
-[2017.07.03-09.21.31:831][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
-[2017.07.03-09.21.31:834][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
-[2017.07.03-09.21.31:837][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
-[2017.07.03-09.21.31:839][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
-[2017.07.03-09.21.31:842][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
-[2017.07.03-09.21.31:844][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
-[2017.07.03-09.21.31:847][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
-[2017.07.03-09.21.31:850][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
-[2017.07.03-09.21.31:853][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Glass.uasset"
-[2017.07.03-09.21.31:856][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Ground_Grass.uasset"
-[2017.07.03-09.21.31:859][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
-[2017.07.03-09.21.31:862][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Ground_Moss.uasset"
-[2017.07.03-09.21.31:865][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
-[2017.07.03-09.21.31:869][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
-[2017.07.03-09.21.31:872][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
-[2017.07.03-09.21.31:874][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Metal_Copper.uasset"
-[2017.07.03-09.21.31:877][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Metal_Gold.uasset"
-[2017.07.03-09.21.31:879][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Metal_Rust.uasset"
-[2017.07.03-09.21.31:882][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Metal_Steel.uasset"
-[2017.07.03-09.21.31:884][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
-[2017.07.03-09.21.31:887][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
-[2017.07.03-09.21.31:889][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
-[2017.07.03-09.21.31:892][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Rock_Slate.uasset"
-[2017.07.03-09.21.31:895][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
-[2017.07.03-09.21.31:898][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
-[2017.07.03-09.21.31:901][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
-[2017.07.03-09.21.31:903][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Tech_Panel.uasset"
-[2017.07.03-09.21.31:906][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Water_Lake.uasset"
-[2017.07.03-09.21.31:909][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Water_Ocean.uasset"
-[2017.07.03-09.21.31:911][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
-[2017.07.03-09.21.31:914][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
-[2017.07.03-09.21.31:917][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Wood_Oak.uasset"
-[2017.07.03-09.21.31:920][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Wood_Pine.uasset"
-[2017.07.03-09.21.31:924][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
-[2017.07.03-09.21.31:928][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
-[2017.07.03-09.21.31:931][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/P_Explosion.uasset"
-[2017.07.03-09.21.31:936][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/P_Fire.uasset"
-[2017.07.03-09.21.31:939][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/P_Smoke.uasset"
-[2017.07.03-09.21.31:942][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/P_Sparks.uasset"
-[2017.07.03-09.21.31:945][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/P_Steam_Lit.uasset"
-[2017.07.03-09.21.31:948][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/Materials/M_Burst.uasset"
-[2017.07.03-09.21.31:952][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
-[2017.07.03-09.21.31:956][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
-[2017.07.03-09.21.31:959][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
-[2017.07.03-09.21.31:962][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
-[2017.07.03-09.21.31:966][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
-[2017.07.03-09.21.31:969][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
-[2017.07.03-09.21.31:972][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
-[2017.07.03-09.21.31:976][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
-[2017.07.03-09.21.31:979][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Particles/Materials/M_Spark.uasset"
-[2017.07.03-09.21.31:982][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/MaterialSphere.uasset"
-[2017.07.03-09.21.31:986][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_Bush.uasset"
-[2017.07.03-09.21.31:990][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_Chair.uasset"
-[2017.07.03-09.21.31:993][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_CornerFrame.uasset"
-[2017.07.03-09.21.31:997][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_Couch.uasset"
-[2017.07.03-09.21.32:001][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_Door.uasset"
-[2017.07.03-09.21.32:003][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_DoorFrame.uasset"
-[2017.07.03-09.21.32:006][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_GlassWindow.uasset"
-[2017.07.03-09.21.32:009][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
-[2017.07.03-09.21.32:011][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
-[2017.07.03-09.21.32:016][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
-[2017.07.03-09.21.32:019][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_PillarFrame.uasset"
-[2017.07.03-09.21.32:021][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_PillarFrame300.uasset"
-[2017.07.03-09.21.32:023][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_Rock.uasset"
-[2017.07.03-09.21.32:026][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_Shelf.uasset"
-[2017.07.03-09.21.32:029][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_Stairs.uasset"
-[2017.07.03-09.21.32:032][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_Statue.uasset"
-[2017.07.03-09.21.32:036][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_TableRound.uasset"
-[2017.07.03-09.21.32:039][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/SM_WindowFrame.uasset"
-[2017.07.03-09.21.32:043][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/Materials/M_Bush.uasset"
-[2017.07.03-09.21.32:045][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/Materials/M_Chair.uasset"
-[2017.07.03-09.21.32:048][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/Materials/M_Door.uasset"
-[2017.07.03-09.21.32:051][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/Materials/M_Frame.uasset"
-[2017.07.03-09.21.32:055][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/Materials/M_Lamp.uasset"
-[2017.07.03-09.21.32:058][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
-[2017.07.03-09.21.32:061][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
-[2017.07.03-09.21.32:064][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/Materials/M_Rock.uasset"
-[2017.07.03-09.21.32:069][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/Materials/M_Shelf.uasset"
-[2017.07.03-09.21.32:076][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/Materials/M_Statue.uasset"
-[2017.07.03-09.21.32:080][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
-[2017.07.03-09.21.32:083][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Props/Materials/M_TableRound.uasset"
-[2017.07.03-09.21.32:086][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Cone.uasset"
-[2017.07.03-09.21.32:090][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Cube.uasset"
-[2017.07.03-09.21.32:093][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
-[2017.07.03-09.21.32:097][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
-[2017.07.03-09.21.32:102][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Pipe.uasset"
-[2017.07.03-09.21.32:107][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
-[2017.07.03-09.21.32:110][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
-[2017.07.03-09.21.32:113][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Plane.uasset"
-[2017.07.03-09.21.32:117][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
-[2017.07.03-09.21.32:120][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Sphere.uasset"
-[2017.07.03-09.21.32:124][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Torus.uasset"
-[2017.07.03-09.21.32:127][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Trim.uasset"
-[2017.07.03-09.21.32:130][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
-[2017.07.03-09.21.32:134][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
-[2017.07.03-09.21.32:138][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
-[2017.07.03-09.21.32:141][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Tube.uasset"
-[2017.07.03-09.21.32:146][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
-[2017.07.03-09.21.32:150][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
-[2017.07.03-09.21.32:153][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
-[2017.07.03-09.21.32:165][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
-[2017.07.03-09.21.32:181][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
-[2017.07.03-09.21.32:192][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
-[2017.07.03-09.21.32:201][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
-[2017.07.03-09.21.32:219][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
-[2017.07.03-09.21.32:232][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
-[2017.07.03-09.21.32:247][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
-[2017.07.03-09.21.32:259][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
-[2017.07.03-09.21.32:277][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
-[2017.07.03-09.21.32:289][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
-[2017.07.03-09.21.32:299][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
-[2017.07.03-09.21.32:311][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
-[2017.07.03-09.21.32:326][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
-[2017.07.03-09.21.32:330][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Burst_M.uasset"
-[2017.07.03-09.21.32:334][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Bush_D.uasset"
-[2017.07.03-09.21.32:339][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Bush_N.uasset"
-[2017.07.03-09.21.32:343][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
-[2017.07.03-09.21.32:347][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
-[2017.07.03-09.21.32:351][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Chair_M.uasset"
-[2017.07.03-09.21.32:356][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Chair_N.uasset"
-[2017.07.03-09.21.32:359][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
-[2017.07.03-09.21.32:373][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
-[2017.07.03-09.21.32:377][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
-[2017.07.03-09.21.32:392][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
-[2017.07.03-09.21.32:398][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
-[2017.07.03-09.21.32:405][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
-[2017.07.03-09.21.32:416][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
-[2017.07.03-09.21.32:426][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
-[2017.07.03-09.21.32:440][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
-[2017.07.03-09.21.32:458][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
-[2017.07.03-09.21.32:470][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
-[2017.07.03-09.21.32:486][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
-[2017.07.03-09.21.32:506][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
-[2017.07.03-09.21.32:518][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
-[2017.07.03-09.21.32:527][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
-[2017.07.03-09.21.32:538][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
-[2017.07.03-09.21.32:546][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
-[2017.07.03-09.21.32:549][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
-[2017.07.03-09.21.32:554][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
-[2017.07.03-09.21.32:559][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Door_M.uasset"
-[2017.07.03-09.21.32:571][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Door_N.uasset"
-[2017.07.03-09.21.32:574][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
-[2017.07.03-09.21.32:582][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
-[2017.07.03-09.21.32:587][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
-[2017.07.03-09.21.32:591][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
-[2017.07.03-09.21.32:595][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Frame_M.uasset"
-[2017.07.03-09.21.32:600][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Frame_N.uasset"
-[2017.07.03-09.21.32:603][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Gradinet_01.uasset"
-[2017.07.03-09.21.32:619][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
-[2017.07.03-09.21.32:636][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
-[2017.07.03-09.21.32:652][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
-[2017.07.03-09.21.32:662][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
-[2017.07.03-09.21.32:681][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
-[2017.07.03-09.21.32:693][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
-[2017.07.03-09.21.32:698][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Lamp_M.uasset"
-[2017.07.03-09.21.32:704][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Lamp_N.uasset"
-[2017.07.03-09.21.32:716][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_MacroVariation.uasset"
-[2017.07.03-09.21.32:730][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
-[2017.07.03-09.21.32:742][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
-[2017.07.03-09.21.32:754][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
-[2017.07.03-09.21.32:762][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
-[2017.07.03-09.21.32:773][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
-[2017.07.03-09.21.32:781][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
-[2017.07.03-09.21.32:791][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
-[2017.07.03-09.21.32:799][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
-[2017.07.03-09.21.32:812][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
-[2017.07.03-09.21.32:825][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_RockMesh_M.uasset"
-[2017.07.03-09.21.32:844][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_RockMesh_N.uasset"
-[2017.07.03-09.21.32:862][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
-[2017.07.03-09.21.32:877][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
-[2017.07.03-09.21.32:892][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
-[2017.07.03-09.21.32:910][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
-[2017.07.03-09.21.32:927][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
-[2017.07.03-09.21.32:950][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
-[2017.07.03-09.21.32:964][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
-[2017.07.03-09.21.32:979][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
-[2017.07.03-09.21.32:983][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Shelf_M.uasset"
-[2017.07.03-09.21.32:992][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Shelf_N.uasset"
-[2017.07.03-09.21.32:995][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
-[2017.07.03-09.21.33:001][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
-[2017.07.03-09.21.33:007][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
-[2017.07.03-09.21.33:011][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Spark_Core.uasset"
-[2017.07.03-09.21.33:015][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Statue_M.uasset"
-[2017.07.03-09.21.33:020][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Statue_N.uasset"
-[2017.07.03-09.21.33:027][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_TableRound_M.uasset"
-[2017.07.03-09.21.33:032][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_TableRound_N.uasset"
-[2017.07.03-09.21.33:041][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
-[2017.07.03-09.21.33:045][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
-[2017.07.03-09.21.33:049][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
-[2017.07.03-09.21.33:057][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
-[2017.07.03-09.21.33:066][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
-[2017.07.03-09.21.33:075][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
-[2017.07.03-09.21.33:079][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Water_M.uasset"
-[2017.07.03-09.21.33:090][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Water_N.uasset"
-[2017.07.03-09.21.33:098][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
-[2017.07.03-09.21.33:109][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
-[2017.07.03-09.21.33:116][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
-[2017.07.03-09.21.33:131][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
-[2017.07.03-09.21.33:145][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
-[2017.07.03-09.21.33:162][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
-[2017.07.03-09.21.33:173][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
-[2017.07.03-09.21.33:183][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
-[2017.07.03-09.21.33:191][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
-[2017.07.03-09.21.33:358][  0]LogRenderer: Reallocating scene render targets to support 256x256 NumSamples 1 (Frame:2).
-[2017.07.03-09.21.33:646][  0]LogSavePackage: Save=17.49ms
-[2017.07.03-09.21.33:646][  0]LogSavePackage: Moving '../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Saved/Floor_400x400377A80F4474F93121474EAA0F2E37B28.tmp' to '../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Architecture/Floor_400x400.uasset'
-[2017.07.03-09.21.33:654][  0]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/StarterContent/Architecture/Floor_400x400.uasset
-[2017.07.03-09.21.33:654][  0]LogFeaturePack:Warning: Inserted 1 feature packs
-[2017.07.03-09.21.33:657][  0]Cmd: MAP LOAD FILE="../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.07.03-09.21.33:658][  0]LightingResults: New page: 라이팅 빌드
-[2017.07.03-09.21.33:831][  0]MapCheck: New page: 맵 체크
-[2017.07.03-09.21.33:831][  0]LightingResults: New page: 라이팅 빌드
-[2017.07.03-09.21.34:607][  0]LogTexture:Display: 텍스처 빌드중: HQ_Lightmap0_1 (AutoDXT)
-[2017.07.03-09.21.34:982][  0]LogTexture:Display: 텍스처 빌드중: HQ_Lightmap0_2 (AutoDXT)
-[2017.07.03-09.21.35:083][  0]LogTexture:Display: 텍스처 빌드중: HQ_Lightmap0_3 (AutoDXT)
-[2017.07.03-09.21.35:105][  0]LogTexture:Display: 텍스처 빌드중: LQ_Lightmap_0_1 (DXT1)
-[2017.07.03-09.21.35:258][  0]LogTexture:Display: 텍스처 빌드중: LQ_Lightmap_0_2 (DXT1)
-[2017.07.03-09.21.35:309][  0]LogTexture:Display: 텍스처 빌드중: LQ_Lightmap_0_3 (DXT1)
-[2017.07.03-09.21.35:326][  0]LogTexture:Display: 텍스처 빌드중: SkyOcclusion0_1 (AutoDXT)
-[2017.07.03-09.21.35:508][  0]LogTexture:Display: 텍스처 빌드중: SkyOcclusion0_2 (AutoDXT)
-[2017.07.03-09.21.35:558][  0]LogTexture:Display: 텍스처 빌드중: SkyOcclusion0_3 (AutoDXT)
-[2017.07.03-09.21.35:569][  0]LogTexture:Display: 텍스처 빌드중: ShadowMapTexture2D_0 (G8)
-[2017.07.03-09.21.35:688][  0]LogTexture:Display: 텍스처 빌드중: ShadowMapTexture2D_1 (G8)
-[2017.07.03-09.21.35:708][  0]LogTexture:Display: 텍스처 빌드중: T_ML_Rubber_Blue_01_D (AutoDXT)
-[2017.07.03-09.21.35:963][  0]LogTexture:Display: 텍스처 빌드중: T_ML_Rubber_Blue_01_N (BC5)
-[2017.07.03-09.21.36:020][  0]LogTexture:Display: 텍스처 빌드중: T_ML_Aluminum01 (AutoDXT)
-[2017.07.03-09.21.36:279][  0]LogTexture:Display: 텍스처 빌드중: T_ML_Aluminum01_N (BC5)
-[2017.07.03-09.21.36:354][  0]LogTexture:Display: 텍스처 빌드중: UE4_Mannequin_MAT_MASKA (AutoDXT)
-[2017.07.03-09.21.36:791][  0]LogTexture:Display: 텍스처 빌드중: UE4_Mannequin__normals (BC5)
-[2017.07.03-09.21.37:407][  0]LogTexture:Display: 텍스처 빌드중: UE4_LOGO_CARD (AutoDXT)
-[2017.07.03-09.21.37:505][  0]LogTexture:Display: 텍스처 빌드중: UE4Man_Logo_N (BC5)
-[2017.07.03-09.21.37:633][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2017.07.03-09.21.37:660][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.07.03-09.21.37:661][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.07.03-09.21.37:796][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 135.347ms.
-[2017.07.03-09.21.37:796][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 4.139
-[2017.07.03-09.21.37:905][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2017.07.03-09.21.37:908][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2017.07.03-09.21.38:105][  0]LogCollectionManager: Loaded 0 collections in 0.004124 seconds
-[2017.07.03-09.21.38:247][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Saved/Collections/' took 0.01s
-[2017.07.03-09.21.38:247][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/Developers/nikem/Collections/' took 0.01s
-[2017.07.03-09.21.38:247][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/Collections/' took 0.01s
-[2017.07.03-09.21.38:247][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2017.07.03-09.21.38:256][  0]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 2205 classes and 437 folders.
-[2017.07.03-09.21.38:350][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.07.03-09.21.38:350][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.07.03-09.21.38:350][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0005 seconds. Added 13 classes and 0 folders.
-[2017.07.03-09.21.38:496][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0007 seconds. Added 0 classes and 0 folders.
-[2017.07.03-09.21.38:568][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0007 seconds. Added 0 classes and 0 folders.
-[2017.07.03-09.21.38:658][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2017.07.03-09.21.38:722][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.07.03-09.21.38:730][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
-[2017.07.03-09.21.38:865][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2017.07.03-09.21.38:865][  0]LogLoad: (Engine Initialization) Total time: 65.43 seconds
-[2017.07.03-09.21.38:865][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.65 seconds
-[2017.07.03-09.21.38:865][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
-[2017.07.03-09.21.38:892][  0]LogOcInput: OculusInput pre-init called
-[2017.07.03-09.21.39:074][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2017.07.03-09.21.39:230][  0]LogRenderer: Reallocating scene render targets to support 964x436 NumSamples 1 (Frame:3).
-[2017.07.03-09.21.39:316][  1]LogAssetRegistry: Asset discovery search completed in 40.2133 seconds
-[2017.07.03-09.21.39:316][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2017.07.03-09.21.39:316][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000014 seconds (updated 0 objects)
-[2017.07.03-09.21.43:136][224]LogRenderer: Reallocating scene render targets to support 964x448 NumSamples 1 (Frame:227).
-[2017.07.03-09.21.43:184][225]LogRenderer: Reallocating scene render targets to support 964x456 NumSamples 1 (Frame:229).
-[2017.07.03-09.21.43:227][226]LogRenderer: Reallocating scene render targets to support 964x472 NumSamples 1 (Frame:231).
-[2017.07.03-09.21.43:270][227]LogRenderer: Reallocating scene render targets to support 964x476 NumSamples 1 (Frame:233).
-[2017.07.03-09.21.43:311][228]LogRenderer: Reallocating scene render targets to support 964x480 NumSamples 1 (Frame:235).
-[2017.07.03-09.21.43:357][229]LogRenderer: Reallocating scene render targets to support 964x484 NumSamples 1 (Frame:237).
-[2017.07.03-09.25.33:897][ 28]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2017.07.03-09.25.33:899][ 28]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2017.07.03-09.25.33:917][ 28]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2017.07.03-09.25.33:918][ 28]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2017.07.03-09.25.34:189][ 29]Cmd: QUIT_EDITOR
-[2017.07.03-09.25.34:222][ 29]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2017.07.03-09.25.34:222][ 29]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
-[2017.07.03-09.25.34:247][ 29]LogExit: Preparing to exit.
-[2017.07.03-09.25.34:805][ 29]LogDirectoryWatcher: A directory notification for 'C:/Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/' was aborted.
-[2017.07.03-09.25.34:823][ 29]LogExit: Editor shut down
-[2017.07.03-09.25.34:823][ 29]LogExit: Transaction tracking system shut down
-[2017.07.03-09.25.34:876][ 29]LogObj: Freed 0b from 0 cluster array pools.
-[2017.07.03-09.25.34:876][ 29]LogExit: Object subsystem successfully closed.
-[2017.07.03-09.25.34:887][ 29]LogD3D11RHI: Shutdown
-[2017.07.03-09.25.34:887][ 29]LogD3D11RHI: CleanupD3DDevice
-[2017.07.03-09.25.34:943][ 29]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.07.03-09.25.34:971][ 29]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2017.07.03-09.25.34:971][ 29]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B862BC428-4B33-6E95-6FDF-11ADA990F0EE%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.14.3-3249277%2B%2B%2BUE4%2BRelease-4.14&UserID=cbbbb48a4988b59c97f96aac455f5577%7C47658907f42743bcbb9d6e67ac92ac71%7C9f36946b-4763-476b-b508-13689bd0f97b&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2017.07.03-09.25.34:984][ 29]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (244)
-[2017.07.03-09.25.34:984][ 29]LogModuleManager: Shutting down and abandoning module CrashTracker (243)
-[2017.07.03-09.25.34:984][ 29]LogModuleManager: Shutting down and abandoning module SceneOutliner (242)
-[2017.07.03-09.25.34:984][ 29]LogModuleManager: Shutting down and abandoning module WidgetCarousel (241)
-[2017.07.03-09.25.34:984][ 29]LogModuleManager: Shutting down and abandoning module AddContentDialog (240)
-[2017.07.03-09.25.34:984][ 29]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.14/FeaturePacks/' was aborted.
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module GameplayTags (239)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module EditorWidgets (238)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module CollectionManager (237)
-[2017.07.03-09.25.34:985][ 29]LogDirectoryWatcher: A directory notification for 'C:/Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/Collections/' was aborted.
-[2017.07.03-09.25.34:985][ 29]LogDirectoryWatcher: A directory notification for 'C:/Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/Developers/nikem/Collections/' was aborted.
-[2017.07.03-09.25.34:985][ 29]LogDirectoryWatcher: A directory notification for 'C:/Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Saved/Collections/' was aborted.
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module StatsViewer (236)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module FoliageEdit (235)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module LandscapeEditor (234)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (233)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module ActorPickerMode (232)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module GeometryMode (231)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module TextureAlignMode (230)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module BspMode (229)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module HardwareSurvey (228)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (227)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module AutomationWorker (226)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (225)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module PlacementMode (224)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (223)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (222)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (221)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (220)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (219)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module Media (218)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (217)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (216)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module CharacterAI (215)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module SequenceRecorder (214)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module AudioCapture (213)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module SmartSnapping (212)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module SessionServices (211)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module ViewportSnapping (210)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module ViewportInteraction (209)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module LogVisualizer (208)
-[2017.07.03-09.25.34:985][ 29]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (207)
-[2017.07.03-09.25.34:986][ 29]LogModuleManager: Shutting down and abandoning module IntroTutorials (206)
-[2017.07.03-09.25.34:986][ 29]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (205)
-[2017.07.03-09.25.34:986][ 29]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (204)
-[2017.07.03-09.25.34:986][ 29]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (203)
-[2017.07.03-09.25.34:986][ 29]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (202)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (201)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (200)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (199)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module InputBindingEditor (198)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module NiagaraEditor (197)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module MergeActors (196)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module SizeMap (195)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module TreeMap (194)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module ReferenceViewer (193)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module LocalizationService (192)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (191)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module HardwareTargeting (190)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (189)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module UndoHistory (188)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module UserFeedback (187)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module XmlParser (186)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module Blutility (185)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (184)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (183)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (182)
-[2017.07.03-09.25.35:651][ 29]LogModuleManager: Shutting down and abandoning module SettingsEditor (181)
-[2017.07.03-09.25.35:652][ 29]LogModuleManager: Shutting down and abandoning module ProjectLauncher (180)
-[2017.07.03-09.25.35:652][ 29]LogModuleManager: Shutting down and abandoning module SessionFrontend (179)
-[2017.07.03-09.25.35:652][ 29]LogModuleManager: Shutting down and abandoning module ProfilerClient (178)
-[2017.07.03-09.25.35:652][ 29]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (177)
-[2017.07.03-09.25.35:652][ 29]LogModuleManager: Shutting down and abandoning module DeviceManager (176)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module AutomationController (175)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module AutomationWindow (174)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module Layers (173)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (172)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module DetailCustomizations (171)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module PackagesDialog (170)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module AnimGraph (169)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module Persona (168)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module Kismet (167)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module GraphEditor (166)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module ClassViewer (165)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module Toolbox (164)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module ModuleUI (163)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module MovieSceneTools (162)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module OutputLog (161)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module GammaUI (160)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module Documentation (159)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module Niagara (158)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (157)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module AnalyticsET (156)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module PortalServices (155)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module PortalRpc (154)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module MessagingRpc (153)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module GameplayDebugger (152)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module AITestSuite (151)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module AIModule (150)
-[2017.07.03-09.25.35:694][ 29]LogModuleManager: Shutting down and abandoning module ProfilerService (149)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module TaskGraph (148)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module SubstanceEditor (147)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module SlateRemote (146)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module SteamVRController (145)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module SteamVR (144)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (143)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (142)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module OculusLibrary (141)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module OculusInput (140)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (139)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (138)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module CableComponent (137)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (136)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (134)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module PanoramicExporter (133)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module HTML5Networking (132)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (131)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module GeometryCache (130)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module AlembicLibrary (129)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module AlembicImporter (128)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module SuperSearch (127)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (126)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (125)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module PluginBrowser (124)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (123)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module EpicSurvey (122)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module DesktopPlatform (121)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (120)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module UObjectPlugin (119)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (118)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (117)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module SourceControl (116)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module GitSourceControl (115)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (114)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (113)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (112)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module MeshPaint (111)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (110)
-[2017.07.03-09.25.35:781][ 29]LogModuleManager: Shutting down and abandoning module HotReload (109)
-[2017.07.03-09.25.35:782][ 29]LogModuleManager: Shutting down and abandoning module MainFrame (108)
-[2017.07.03-09.25.35:782][ 29]LogModuleManager: Shutting down and abandoning module LevelEditor (107)
-[2017.07.03-09.25.35:782][ 29]LogModuleManager: Shutting down and abandoning module ContentBrowser (106)
-[2017.07.03-09.25.35:783][ 29]LogModuleManager: Shutting down and abandoning module Paper2DEditor (105)
-[2017.07.03-09.25.35:783][ 29]LogModuleManager: Shutting down and abandoning module UdpMessaging (104)
-[2017.07.03-09.25.35:884][ 29]LogModuleManager: Shutting down and abandoning module TcpMessaging (103)
-[2017.07.03-09.25.35:985][ 29]LogModuleManager: Shutting down and abandoning module SubstanceCore (102)
-[2017.07.03-09.25.35:985][ 29]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (101)
-[2017.07.03-09.25.35:985][ 29]LogModuleManager: Shutting down and abandoning module Paper2D (100)
-[2017.07.03-09.25.35:985][ 29]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (99)
-[2017.07.03-09.25.35:985][ 29]LogModuleManager: Shutting down and abandoning module WmfMedia (98)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module MediaAssets (97)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (96)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (95)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module VREditor (94)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (93)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (92)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module FunctionalTesting (91)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (90)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module Sequencer (89)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (88)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module MessageLog (87)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module AssetTools (86)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module UMGEditor (85)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module UMG (84)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module SlateReflector (83)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module Slate (82)
-[2017.07.03-09.25.35:987][ 29]LogModuleManager: Shutting down and abandoning module EditorStyle (81)
-[2017.07.03-09.25.35:990][ 29]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (80)
-[2017.07.03-09.25.35:990][ 29]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (79)
-[2017.07.03-09.25.35:990][ 29]LogModuleManager: Shutting down and abandoning module XAudio2 (78)
-[2017.07.03-09.25.35:990][ 29]LogModuleManager: Shutting down and abandoning module Networking (76)
-[2017.07.03-09.25.35:990][ 29]LogModuleManager: Shutting down and abandoning module Core (75)
-[2017.07.03-09.25.35:990][ 29]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (74)
-[2017.07.03-09.25.35:990][ 29]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2017.07.03-09.25.35:990][ 29]LogDirectoryWatcher: A directory notification for '../../../../../../Users/nikem/Documents/Unreal Projects/ThirdPersonExample/Content/' was aborted.
-[2017.07.03-09.25.35:990][ 29]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2017.07.03-09.25.35:990][ 29]LogModuleManager: Shutting down and abandoning module AssetRegistry (73)
-[2017.07.03-09.25.36:037][ 29]LogModuleManager: Shutting down and abandoning module KismetCompiler (72)
-[2017.07.03-09.25.36:037][ 29]LogModuleManager: Shutting down and abandoning module PhysXFormats (71)
-[2017.07.03-09.25.36:037][ 29]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (70)
-[2017.07.03-09.25.36:037][ 29]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (69)
-[2017.07.03-09.25.36:037][ 29]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (68)
-[2017.07.03-09.25.36:038][ 29]LogModuleManager: Shutting down and abandoning module PropertyEditor (67)
-[2017.07.03-09.25.36:038][ 29]LogModuleManager: Shutting down and abandoning module MeshUtilities (66)
-[2017.07.03-09.25.36:038][ 29]LogModuleManager: Shutting down and abandoning module DerivedDataCache (65)
-[2017.07.03-09.25.36:068][ 29]LogDerivedDataCache: Shutdown
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (64)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (63)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (62)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (61)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (60)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (59)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (58)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (57)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module ImageWrapper (56)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (55)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (54)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (53)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (52)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (51)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (50)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (49)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (48)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (47)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (46)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module Messaging (45)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (44)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (43)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (42)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (41)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (40)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (39)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (38)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (37)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (36)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (35)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (34)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (33)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (32)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (31)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (30)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (29)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (28)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (27)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (26)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module TargetPlatform (25)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module InputCore (24)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module Settings (23)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module OculusRift (22)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (21)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (20)
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (18)
-[2017.07.03-09.25.36:068][ 29]LogOnline:Display: Unloading online subsystem: NULL
-[2017.07.03-09.25.36:068][ 29]LogModuleManager: Shutting down and abandoning module SSL (17)
-[2017.07.03-09.25.36:069][ 29]LogModuleManager: Shutting down and abandoning module HTTP (16)
-[2017.07.03-09.25.36:069][ 29]LogModuleManager: Shutting down and abandoning module XMPP (15)
-[2017.07.03-09.25.36:069][ 29]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2017.07.03-09.25.36:069][ 29]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2017.07.03-09.25.36:069][ 29]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2017.07.03-09.25.36:069][ 29]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2017.07.03-09.25.36:070][ 29]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2017.07.03-09.25.36:070][ 29]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2017.07.03-09.25.36:070][ 29]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2017.07.03-09.25.36:070][ 29]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2017.07.03-09.25.36:070][ 29]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2017.07.03-09.25.36:070][ 29]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2017.07.03-09.25.36:070][ 29]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2017.07.03-09.25.36:070][ 29]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2017.07.03-09.25.36:070][ 29]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2017.07.03-09.25.36:070][ 29]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2017.07.03-09.25.36:073][ 29]LogExit: Exiting.
-[2017.07.03-09.25.36:079][ 29]Log file closed, 07/03/17 18:25:36
+[2017.07.03-11.36.42:325][  0]LogD3D11RHI: D3D11 adapters:
+[2017.07.03-11.36.42:395][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050' (Feature Level 11_0)
+[2017.07.03-11.36.42:395][  0]LogD3D11RHI:       4031/0/16309 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.07.03-11.36.42:402][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
+[2017.07.03-11.36.42:402][  0]LogD3D11RHI:       128/0/16309 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.07.03-11.36.42:405][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.07.03-11.36.42:405][  0]LogD3D11RHI:       0/0/16309 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.07.03-11.36.42:405][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.07.03-11.36.42:414][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.07.03-11.36.42:414][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8d (for the marketing name, search the web for "GPU Device Id")
+[2017.07.03-11.36.42:415][  0]LogWindows: EnumDisplayDevices:
+[2017.07.03-11.36.42:415][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:1 D:1)
+[2017.07.03-11.36.42:415][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2017.07.03-11.36.42:416][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2017.07.03-11.36.42:416][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.07.03-11.36.42:416][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050
+[2017.07.03-11.36.42:416][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.07.03-11.36.42:416][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.07.03-11.36.42:416][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.07.03-11.36.42:448][  0]LogD3D11RHI: Async texture creation enabled
+[2017.07.03-11.36.42:468][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.07.03-11.36.42:468][  0]LogShaderCompilers: Guid format shader working directory is -31 characters bigger than the processId version (../../../../../../Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/Intermediate/Shaders/WorkingDirectory/19836/).
+[2017.07.03-11.36.42:470][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/nikem/AppData/Local/Temp/UnrealShaderWorkingDir/78187F0946E80BD5DEE46C93693064A0/'.
+[2017.07.03-11.36.42:470][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.07.03-11.36.43:734][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.07.03-11.36.43:831][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.07.03-11.36.43:926][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.07.03-11.36.44:022][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.07.03-11.36.44:122][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.07.03-11.36.44:217][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.07.03-11.36.44:312][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.07.03-11.36.44:409][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.07.03-11.36.44:494][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.07.03-11.36.44:589][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.07.03-11.36.44:692][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.07.03-11.36.44:788][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.07.03-11.36.44:883][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.07.03-11.36.44:978][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.07.03-11.36.45:074][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.07.03-11.36.45:273][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.07.03-11.36.45:273][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.07.03-11.36.45:351][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.07.03-11.36.45:503][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.07.03-11.36.45:560][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.07.03-11.36.45:656][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.07.03-11.36.45:754][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.07.03-11.36.45:847][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.07.03-11.36.45:942][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.07.03-11.36.45:942][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.07.03-11.36.48:726][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.07.03-11.36.48:767][  0]LogDerivedDataCache: Loaded boot cache 0.04s 50MB C:/Users/nikem/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2017.07.03-11.36.48:767][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/nikem/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc
+[2017.07.03-11.36.48:767][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.07.03-11.36.48:767][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.07.03-11.36.48:767][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.07.03-11.36.48:767][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.07.03-11.36.48:783][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.07.03-11.36.48:796][  0]LogDerivedDataCache: Using Local data cache path C:/Users/nikem/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.07.03-11.36.49:041][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.03-11.36.49:044][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.07.03-11.36.49:364][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.07.03-11.36.49:454][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.07.03-11.36.49:551][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.07.03-11.36.49:551][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.07.03-11.36.49:551][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.07.03-11.36.50:161][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3195953, ProjectName: thirdpersonexample, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 25382818
+[2017.07.03-11.36.50:242][  0]LogAssetRegistry: FAssetRegistry took 0.0218 seconds to start up
+[2017.07.03-11.36.50:320][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.031046 seconds
+[2017.07.03-11.36.50:326][  0]LogUObjectArray: 31946 objects as part of root set at end of initial load.
+[2017.07.03-11.36.50:326][  0]LogUObjectAllocator: 6935848 out of 0 bytes used by permanent object pool.
+[2017.07.03-11.36.50:326][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.07.03-11.36.50:462][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.07.03-11.36.51:959][  0]LogSlate: Using Freetype 2.6.0
+[2017.07.03-11.36.51:960][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.03-11.36.51:960][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.03-11.36.53:263][  0]LogSubstanceCoreModule: Substance [CPU] Engine Loaded, Max Texture Size = 2048
+[2017.07.03-11.36.53:325][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.07.03-11.36.53:394][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.07.03-11.36.54:098][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.07.03-11.36.54:898][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.07.03-11.36.54:966][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.07.03-11.36.55:061][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.07.03-11.36.55:151][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.07.03-11.36.57:849][  0]LogEngine: Initializing Engine...
+[2017.07.03-11.36.57:880][  0]LogHMD: Failed to initialize OpenVR with code 126
+[2017.07.03-11.36.58:250][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.07.03-11.36.58:270][  0]LogInit: XAudio2 using '스피커 / 헤드폰(Realtek Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.03-11.36.59:290][  0]LogInit: FAudioDevice initialized.
+[2017.07.03-11.36.59:316][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/nikem/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2017.07.03-11.36.59:320][  0]LogInit: Texture streaming: Enabled
+[2017.07.03-11.36.59:690][  0]LogInit: Transaction tracking system initialized
+[2017.07.03-11.37.00:409][  0]BlueprintLog: New page: 에디터 로드
+[2017.07.03-11.37.02:231][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
+[2017.07.03-11.37.03:524][  0]LogConsoleResponse:Display: 
+[2017.07.03-11.37.03:695][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.07.03-11.37.03:695][  0]LogCook:Display: Mobile HDR setting 1
+[2017.07.03-11.37.04:695][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/Content/' took 0.02s
+[2017.07.03-11.37.05:598][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.07.03-11.37.05:598][  0]Cmd: MAP LOAD FILE="../../../../../../Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.07.03-11.37.05:599][  0]LightingResults: New page: 라이팅 빌드
+[2017.07.03-11.37.05:681][  0]MapCheck: New page: 맵 체크
+[2017.07.03-11.37.05:681][  0]LightingResults: New page: 라이팅 빌드
+[2017.07.03-11.37.06:084][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.07.03-11.37.06:095][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.07.03-11.37.06:095][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.07.03-11.37.06:180][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 84.356ms.
+[2017.07.03-11.37.06:180][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.582
+[2017.07.03-11.37.06:263][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.07.03-11.37.06:264][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.07.03-11.37.06:392][  0]LogCollectionManager: Loaded 0 collections in 0.001544 seconds
+[2017.07.03-11.37.06:516][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/Saved/Collections/' took 0.01s
+[2017.07.03-11.37.06:516][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/Content/Developers/nikem/Collections/' took 0.01s
+[2017.07.03-11.37.06:516][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/Content/Collections/' took 0.01s
+[2017.07.03-11.37.06:516][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2017.07.03-11.37.06:524][  0]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2205 classes and 437 folders.
+[2017.07.03-11.37.06:613][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.07.03-11.37.06:613][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.07.03-11.37.06:613][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0005 seconds. Added 13 classes and 0 folders.
+[2017.07.03-11.37.06:746][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.07.03-11.37.06:803][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.07.03-11.37.06:887][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.07.03-11.37.06:953][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.07.03-11.37.06:960][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
+[2017.07.03-11.37.07:075][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2017.07.03-11.37.07:076][  0]LogLoad: (Engine Initialization) Total time: 27.39 seconds
+[2017.07.03-11.37.07:076][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.20 seconds
+[2017.07.03-11.37.07:076][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.07.03-11.37.07:100][  0]LogOcInput: OculusInput pre-init called
+[2017.07.03-11.37.07:119][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.07.03-11.37.07:272][  0]LogRenderer: Reallocating scene render targets to support 964x484 NumSamples 1 (Frame:2).
+[2017.07.03-11.37.07:353][  1]LogAssetRegistry: Asset discovery search completed in 17.1328 seconds
+[2017.07.03-11.37.07:353][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2017.07.03-11.37.07:353][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000015 seconds (updated 0 objects)
+[2017.07.03-11.37.19:185][702]Cmd: CLOSE_SLATE_MAINFRAME
+[2017.07.03-11.37.19:238][702]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/' was aborted.
+[2017.07.03-11.37.19:238][702]LogDirectoryWatcher: A directory notification for '../../../../../../Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/Plugins/' was aborted.
+[2017.07.03-11.37.19:245][702]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.07.03-11.37.19:246][702]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.07.03-11.37.19:267][702]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.07.03-11.37.19:268][702]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.07.03-11.37.19:521][703]Cmd: QUIT_EDITOR
+[2017.07.03-11.37.19:564][703]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.07.03-11.37.19:564][703]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.07.03-11.37.19:594][703]LogExit: Preparing to exit.
+[2017.07.03-11.37.20:483][703]LogDirectoryWatcher: A directory notification for 'C:/Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/Content/' was aborted.
+[2017.07.03-11.37.20:509][703]LogExit: Editor shut down
+[2017.07.03-11.37.20:509][703]LogExit: Transaction tracking system shut down
+[2017.07.03-11.37.20:565][703]LogObj: Freed 0b from 0 cluster array pools.
+[2017.07.03-11.37.20:565][703]LogExit: Object subsystem successfully closed.
+[2017.07.03-11.37.20:636][703]LogD3D11RHI: Shutdown
+[2017.07.03-11.37.20:636][703]LogD3D11RHI: CleanupD3DDevice
+[2017.07.03-11.37.20:907][703]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.07.03-11.37.20:933][703]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.07.03-11.37.20:933][703]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD31840D7-4985-E493-0F70-DC955A0C2DDC%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.14.3-3249277%2B%2B%2BUE4%2BRelease-4.14&UserID=cbbbb48a4988b59c97f96aac455f5577%7C47658907f42743bcbb9d6e67ac92ac71%7C9f36946b-4763-476b-b508-13689bd0f97b&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.07.03-11.37.20:933][703]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.07.03-11.37.21:435][703]LogHttp:Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
+[2017.07.03-11.37.21:942][703]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (244)
+[2017.07.03-11.37.21:942][703]LogModuleManager: Shutting down and abandoning module CrashTracker (243)
+[2017.07.03-11.37.21:942][703]LogModuleManager: Shutting down and abandoning module SceneOutliner (242)
+[2017.07.03-11.37.21:942][703]LogModuleManager: Shutting down and abandoning module WidgetCarousel (241)
+[2017.07.03-11.37.21:942][703]LogModuleManager: Shutting down and abandoning module AddContentDialog (240)
+[2017.07.03-11.37.21:942][703]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.14/FeaturePacks/' was aborted.
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module GameplayTags (239)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module EditorWidgets (238)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module CollectionManager (237)
+[2017.07.03-11.37.21:943][703]LogDirectoryWatcher: A directory notification for 'C:/Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/Content/Collections/' was aborted.
+[2017.07.03-11.37.21:943][703]LogDirectoryWatcher: A directory notification for 'C:/Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/Content/Developers/nikem/Collections/' was aborted.
+[2017.07.03-11.37.21:943][703]LogDirectoryWatcher: A directory notification for 'C:/Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/Saved/Collections/' was aborted.
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module StatsViewer (236)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module FoliageEdit (235)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module LandscapeEditor (234)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (233)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module ActorPickerMode (232)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module GeometryMode (231)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module TextureAlignMode (230)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module BspMode (229)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module HardwareSurvey (228)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (227)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module AutomationWorker (226)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (225)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module PlacementMode (224)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (223)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (222)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (221)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (220)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (219)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module Media (218)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (217)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (216)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module CharacterAI (215)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module SequenceRecorder (214)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module AudioCapture (213)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module SmartSnapping (212)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module SessionServices (211)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module ViewportSnapping (210)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module ViewportInteraction (209)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module LogVisualizer (208)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (207)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module IntroTutorials (206)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (205)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (204)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (203)
+[2017.07.03-11.37.21:943][703]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (202)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (201)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (200)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (199)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module InputBindingEditor (198)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module NiagaraEditor (197)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module MergeActors (196)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module SizeMap (195)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module TreeMap (194)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module ReferenceViewer (193)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module LocalizationService (192)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (191)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module HardwareTargeting (190)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (189)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module UndoHistory (188)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module UserFeedback (187)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module XmlParser (186)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module Blutility (185)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (184)
+[2017.07.03-11.37.21:944][703]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (183)
+[2017.07.03-11.37.21:945][703]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (182)
+[2017.07.03-11.37.21:945][703]LogModuleManager: Shutting down and abandoning module SettingsEditor (181)
+[2017.07.03-11.37.21:945][703]LogModuleManager: Shutting down and abandoning module ProjectLauncher (180)
+[2017.07.03-11.37.21:945][703]LogModuleManager: Shutting down and abandoning module SessionFrontend (179)
+[2017.07.03-11.37.21:945][703]LogModuleManager: Shutting down and abandoning module ProfilerClient (178)
+[2017.07.03-11.37.21:945][703]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (177)
+[2017.07.03-11.37.21:945][703]LogModuleManager: Shutting down and abandoning module DeviceManager (176)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module AutomationController (175)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module AutomationWindow (174)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module Layers (173)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (172)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module DetailCustomizations (171)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module PackagesDialog (170)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module AnimGraph (169)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module Persona (168)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module Kismet (167)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module GraphEditor (166)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module ClassViewer (165)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module Toolbox (164)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module ModuleUI (163)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module MovieSceneTools (162)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module OutputLog (161)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module GammaUI (160)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module Documentation (159)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module Niagara (158)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (157)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module AnalyticsET (156)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module PortalServices (155)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module PortalRpc (154)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module MessagingRpc (153)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module GameplayDebugger (152)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module AITestSuite (151)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module AIModule (150)
+[2017.07.03-11.37.21:988][703]LogModuleManager: Shutting down and abandoning module ProfilerService (149)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module TaskGraph (148)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module SubstanceEditor (147)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module SlateRemote (146)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module SteamVRController (145)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module SteamVR (144)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (143)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (142)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module OculusLibrary (141)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module OculusInput (140)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (139)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (138)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module CableComponent (137)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (136)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (134)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module PanoramicExporter (133)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module HTML5Networking (132)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (131)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module GeometryCache (130)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module AlembicLibrary (129)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module AlembicImporter (128)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module SuperSearch (127)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (126)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (125)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module PluginBrowser (124)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (123)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module EpicSurvey (122)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module DesktopPlatform (121)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (120)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module UObjectPlugin (119)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (118)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (117)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module SourceControl (116)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module GitSourceControl (115)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (114)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (113)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (112)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module MeshPaint (111)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (110)
+[2017.07.03-11.37.22:085][703]LogModuleManager: Shutting down and abandoning module HotReload (109)
+[2017.07.03-11.37.22:086][703]LogModuleManager: Shutting down and abandoning module MainFrame (108)
+[2017.07.03-11.37.22:086][703]LogModuleManager: Shutting down and abandoning module LevelEditor (107)
+[2017.07.03-11.37.22:087][703]LogModuleManager: Shutting down and abandoning module ContentBrowser (106)
+[2017.07.03-11.37.22:087][703]LogModuleManager: Shutting down and abandoning module Paper2DEditor (105)
+[2017.07.03-11.37.22:087][703]LogModuleManager: Shutting down and abandoning module UdpMessaging (104)
+[2017.07.03-11.37.22:189][703]LogModuleManager: Shutting down and abandoning module TcpMessaging (103)
+[2017.07.03-11.37.22:289][703]LogModuleManager: Shutting down and abandoning module SubstanceCore (102)
+[2017.07.03-11.37.22:289][703]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (101)
+[2017.07.03-11.37.22:289][703]LogModuleManager: Shutting down and abandoning module Paper2D (100)
+[2017.07.03-11.37.22:289][703]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (99)
+[2017.07.03-11.37.22:289][703]LogModuleManager: Shutting down and abandoning module WmfMedia (98)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module MediaAssets (97)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (96)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (95)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module VREditor (94)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (93)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (92)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module FunctionalTesting (91)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (90)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module Sequencer (89)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (88)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module MessageLog (87)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module AssetTools (86)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module UMGEditor (85)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module UMG (84)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module SlateReflector (83)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module Slate (82)
+[2017.07.03-11.37.22:291][703]LogModuleManager: Shutting down and abandoning module EditorStyle (81)
+[2017.07.03-11.37.22:295][703]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (80)
+[2017.07.03-11.37.22:295][703]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (79)
+[2017.07.03-11.37.22:295][703]LogModuleManager: Shutting down and abandoning module XAudio2 (78)
+[2017.07.03-11.37.22:295][703]LogModuleManager: Shutting down and abandoning module Networking (76)
+[2017.07.03-11.37.22:295][703]LogModuleManager: Shutting down and abandoning module Core (75)
+[2017.07.03-11.37.22:295][703]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (74)
+[2017.07.03-11.37.22:295][703]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.07.03-11.37.22:295][703]LogDirectoryWatcher: A directory notification for '../../../../../../Users/nikem/ws/ue4-360-stereo-rendering/ThirdPersonExample/Content/' was aborted.
+[2017.07.03-11.37.22:295][703]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.07.03-11.37.22:296][703]LogModuleManager: Shutting down and abandoning module AssetRegistry (73)
+[2017.07.03-11.37.22:435][703]LogModuleManager: Shutting down and abandoning module KismetCompiler (72)
+[2017.07.03-11.37.22:435][703]LogModuleManager: Shutting down and abandoning module PhysXFormats (71)
+[2017.07.03-11.37.22:435][703]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (70)
+[2017.07.03-11.37.22:435][703]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (69)
+[2017.07.03-11.37.22:435][703]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (68)
+[2017.07.03-11.37.22:435][703]LogModuleManager: Shutting down and abandoning module PropertyEditor (67)
+[2017.07.03-11.37.22:435][703]LogModuleManager: Shutting down and abandoning module MeshUtilities (66)
+[2017.07.03-11.37.22:435][703]LogModuleManager: Shutting down and abandoning module DerivedDataCache (65)
+[2017.07.03-11.37.22:814][703]LogDerivedDataCache: Shutdown
+[2017.07.03-11.37.22:814][703]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (64)
+[2017.07.03-11.37.22:814][703]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (63)
+[2017.07.03-11.37.22:814][703]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (62)
+[2017.07.03-11.37.22:814][703]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (61)
+[2017.07.03-11.37.22:814][703]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (60)
+[2017.07.03-11.37.22:814][703]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (59)
+[2017.07.03-11.37.22:814][703]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (58)
+[2017.07.03-11.37.22:814][703]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (57)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module ImageWrapper (56)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (55)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (54)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (53)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (52)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (51)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (50)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (49)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (48)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (47)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (46)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module Messaging (45)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (44)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (43)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (42)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (41)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (40)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (39)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (38)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (37)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (36)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (35)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (34)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (33)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (32)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (31)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (30)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (29)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (28)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (27)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (26)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module TargetPlatform (25)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module InputCore (24)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module Settings (23)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module OculusRift (22)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (21)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (20)
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (18)
+[2017.07.03-11.37.22:815][703]LogOnline:Display: Unloading online subsystem: NULL
+[2017.07.03-11.37.22:815][703]LogModuleManager: Shutting down and abandoning module SSL (17)
+[2017.07.03-11.37.22:816][703]LogModuleManager: Shutting down and abandoning module HTTP (16)
+[2017.07.03-11.37.22:816][703]LogModuleManager: Shutting down and abandoning module XMPP (15)
+[2017.07.03-11.37.22:816][703]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2017.07.03-11.37.22:816][703]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2017.07.03-11.37.22:816][703]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2017.07.03-11.37.22:816][703]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2017.07.03-11.37.22:818][703]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2017.07.03-11.37.22:818][703]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2017.07.03-11.37.22:818][703]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2017.07.03-11.37.22:818][703]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2017.07.03-11.37.22:818][703]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2017.07.03-11.37.22:818][703]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2017.07.03-11.37.22:818][703]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2017.07.03-11.37.22:818][703]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2017.07.03-11.37.22:818][703]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2017.07.03-11.37.22:818][703]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2017.07.03-11.37.22:820][703]LogExit: Exiting.
+[2017.07.03-11.37.22:821][703]Log file closed, 07/03/17 20:37:22
